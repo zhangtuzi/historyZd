@@ -17,6 +17,12 @@ body{
   display: block;
   content:'';
 }
+.borderT{
+	border-top:1px solid #dedede!important;
+}
+.marginT0{
+	margin-top:0!important;
+}
 .warpAll{
   width:6.4rem;
   position: relative;
@@ -59,6 +65,7 @@ body{
 }
 .historyBillDiv{
   width:6rem;
+	height:3.8rem;
   padding:0 0.2rem;
   background: #fff;
   position: relative;
@@ -66,16 +73,16 @@ body{
 .historyBillA{
 	position: absolute;
 	z-index: 2;
-	top: 1.3rem;
+	top: 1.55rem;
 	left: 1.05rem;
 	text-align: center;
 }
 .txt1{
   font-size:0.22rem;
-  color:#3f3123;
+  color:#333;
 }
 .txt2{
-  margin-top:0.1rem;
+  margin-top:0.03rem;
   font-size:0.24rem;
   color:#ff7744;
 }
@@ -83,17 +90,26 @@ body{
   width:2.7rem;
   height:2.7rem;
   display: inline-block;
-	margin-top:0.3rem;
+	margin-top:0.55rem;
+}
+.historyBill_Div{
+	margin-top:0.55rem;
+	float:right;
+  margin-right:0;
+	position: relative;
+	height:2.7rem;
+	width:2.95rem;
 }
 .historyBill_Ul{
-  float:right;
-  /*width:2.6rem;*/
-  margin-right:0;
-  margin-top:0.9rem;
+	width:100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 .historyBill_Ul>li{
   height:0.24rem;
-  padding:0.14rem;
+  padding:0.1rem;
   font-size:0.22rem;
 }
 .colorDiv{
@@ -108,14 +124,28 @@ body{
   background: #ff7744;
 }
 .bgColor2{
-  background: #44c8ff;
+  background: #6894d6;
 }
 .bgColor3{
-  background: #76d84b;
+  background: #8172ac;
 }
-
+.bgColor4{
+  background: #f9c730;
+}
+.bgColor5{
+  background: #1dac91;
+}
+.bgColor6{
+  background: #00a5e6;
+}
+.bgColor7{
+  background: #f35944;
+}
+.bgColor8{
+  background: #cba276;
+}
 .billItem{
-  color:#3f3123;
+  color:#333;
 }
 .billBFB{
   float:right;
@@ -132,7 +162,7 @@ body{
   height:0.65rem;
   padding:0 0.25rem;
   font-size: 0.24rem;
-  color:#3f3123;
+  color:#333;
   line-height: 0.65rem;
   border-bottom:1px solid #dedede;
 }
@@ -140,18 +170,38 @@ body{
   color:#ff7744;
 }
 .messageUL{
-  margin:0.1rem 0.25rem;
+  padding:0.1rem 0;
   font-size: 0.22rem;
-  color:#3f3123;
+  color:#333;
 }
 .messageUL>li{
+	padding:0  0.25rem;
   height:0.4rem;
   line-height: 0.4rem;
 }
+.messageUL2{
+	width:100%;
+	background:#fafafa;
+	padding:0.05rem 0;
+}
+.messageUL2>li{
+	color:#999;
+	font-size:0.22rem;
+	padding:0 0.25rem;
+	line-height: 0.42rem;
+}
+.round1{
+	float:left;
+	margin:0.18rem 0.15rem 0 0.05rem;
+	width:0.06rem;
+	height:0.06rem;
+	border-radius: 50%;
+	background: #999;
+}
 .tip_div{
-  padding:0.35rem 0.25rem;
+  padding:0.3rem 0.25rem;
   font-size: 0.18rem;
-  color:#3f3123;
+  color:#333;
 }
 .tip_icon{
 	float:left;
@@ -163,6 +213,20 @@ body{
   line-height: 0.32rem;
 }
 .tipTit{
-  margin-top:0.35rem;
+  margin-top:0.4rem;
   font-size:0.22rem;
+}
+.cy_titP{
+	padding-left:0.2rem;
+	height:0.48rem;
+	color:#333;
+	font-size:0.22rem;
+	line-height: 0.48rem;
+}
+
+.person_icon_zhl{
+	width:0.2rem;
+	height:0.2rem;
+	margin-top:0.22rem;
+	margin-right:0.1rem;
 }
