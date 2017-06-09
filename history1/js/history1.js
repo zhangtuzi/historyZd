@@ -7,7 +7,7 @@ $(function(){
   $('#historyBill').highcharts({
       chart: {
           //  type: 'line',
-          margin: [0, 2, 2, 2],
+          margin: [0, 0, 0, 0],
 
           //距离上下左右的距离值
           plotBackgroundColor: null,
@@ -39,7 +39,8 @@ $(function(){
                   enabled: false,
               },
               showInLegend: true,
-              innerSize: '50'
+              innerSize: '50',
+              borderWidth:null
           }
       },
 
@@ -54,8 +55,10 @@ $(function(){
           name: 'TITLE',
           innerSize: '60%',
           data: [{name: '月固定费',y: 20,color:'#ff7744'},//月固定费名称、比例、颜色
-                 {name: '可视电话费',y: 30,color:'#44c8ff'},//可视电话费名称、比例、颜色
-                 {name: '违约金',y: 50,color:'#76d84b'}//违约金名称、比例、颜色
+                 {name: '可视电话费',y: 40,color:'#6894d6'},//可视电话费名称、比例、颜色
+                 {name: '违约金',y: 10,color:'#8172ac'},//违约金名称、比例、颜色
+                 {name: '可视电话费',y: 5,color:'#f9c730'},//可视电话费名称、比例、颜色
+                 {name: '违约金',y: 25,color:'#1dac91'}//违约金名称、比例、颜色
                ]
       }]
   });
