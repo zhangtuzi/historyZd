@@ -1,4 +1,7 @@
 $(function(){
+  var dateLIL=$('.dateUL>li').length;
+  $('.dateUL>li').width((1/dateLIL)*100+'%');
+
   $('.dateUL>li').on('touchend',function(){
     $('.dateUL>li').removeClass('dateS');
     $(this).addClass('dateS');
@@ -29,6 +32,7 @@ $(function(){
       },
 
       tooltip: {
+          enabled: true,
           pointFormat: ': <b>{point.percentage:.1f}%</b>'
       },
       plotOptions: {
@@ -63,4 +67,16 @@ $(function(){
       }]
   });
 
+})
+
+$('.highcharts-series path').on('touchend',function(){
+  alert(1);
+  var fcI=3;
+  clearInterval(fcS);
+  var fcS=setInterval(function(){
+    if(fcI<1){
+      clearInterval(fcS);
+      $('.highcharts-tooltip').hide();
+    }
+  },1000)
 })
